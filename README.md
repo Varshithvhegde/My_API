@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to MY API 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.00-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
 </p>
 
