@@ -15,13 +15,16 @@
 ```sh
 git clone https://github.com/Varshithvhegde/My_API.git
 ```
-
+## API Link
+```sh
+https://script.google.com/macros/s/AKfycbyGrtQOUbZJpfJYws3G40Awek7Kz-OZ7ahLM2VioTJ5aaoHmvKL8E9X0-0Ng4-QGgPQ/exec
+```
 ## Author
 
 👤 **Varshith V Hegde**
 
 * Website: https://Varshithvhegde.github.io
-* Github: [@Varshithvhegde](https://github.com/Varshithvhegde)
+* Github: [@Varshithvhegde](https://github.com/Varshithvhgde)
 
 ## Show your support
 
