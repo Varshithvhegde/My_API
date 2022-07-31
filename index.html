@@ -4,35 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MITE CSE3</title>
-    <!-- <script src="script.js" defer></script> -->
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div id='Details'></div>
 
-  <script>
-fetch('https://script.google.com/macros/s/AKfycbyGrtQOUbZJpfJYws3G40Awek7Kz-OZ7ahLM2VioTJ5aaoHmvKL8E9X0-0Ng4-QGgPQ/exec')
-   .then(response => response.json())
-   .then(characters => showCharacters(characters.data));
-   showCharacters = characters => {
-   
-    document.write("<table class='tab'><tr><th>Name</th><th>USN</th><th>");
-    
-    characters.forEach(character => {
-        if(character.Name!="Name"){
-    //   const characterElement = document.createElement('p');
-    //   const USN = document.createElement('p');
-      document.write("<tr><td>" + character.Name + "</td><td>" + character.USN + "</td><td><br> ");
-     // characterElement.innerText = `Name: ${character.Name}`;
-    //     USN.innerText = `USN: ${character.USN}`;
-    //   charactersDiv.append(characterElement);
-    //     charactersDiv.append(USN);
-        }
-    });
-}
-        
-</script>
-</body>
+
+<!--Style is not working on Table element and others which is dynamically created using javascript-->
+<!--Problem is Identified that is in this the css is rendered fast and then javascript is rendered so that the first rendered css will be overwritten 
+     I found out by adding background color to body when I added bg color once it apperad then it automatically vanished whhen javascript is rendered.
+
+-->
 <style type="text/css" media = "all" >
+
     table,tr,td,th {
         border-collapse: collapse;
         width: 100%;
@@ -44,6 +28,6 @@ fetch('https://script.google.com/macros/s/AKfycbyGrtQOUbZJpfJYws3G40Awek7Kz-OZ7a
         border: 1px solid black;
     }
 </style>    
-
+  </body>
 </html>
 </html>
