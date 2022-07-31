@@ -21,7 +21,7 @@ git clone https://github.com/Varshithvhegde/My_API.git
 👤 **Varshith V Hegde**
 
 * Website: https://Varshithvhegde.github.io
-* Github: [@Varshithvhegde](https://github.com/Varshithvhgde)
+* Github: [@Varshithvhegde](https://github.com/Varshithvhegde)
 
 ## Show your support
 
