@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITE CSE3</title>
+    <!-- <script src="script.js" defer></script> -->
+  </head>
+  <body>
+    <div id='Details'></div>
+
+  <script>
+fetch('https://script.google.com/macros/s/AKfycbyGrtQOUbZJpfJYws3G40Awek7Kz-OZ7ahLM2VioTJ5aaoHmvKL8E9X0-0Ng4-QGgPQ/exec')
+   .then(response => response.json())
+   .then(characters => showCharacters(characters.data));
+   showCharacters = characters => {
+   
+    document.write("<table class='tab'><tr><th>Name</th><th>USN</th><th>");
+    
+    characters.forEach(character => {
+        if(character.Name!="Name"){
+    //   const characterElement = document.createElement('p');
+    //   const USN = document.createElement('p');
+      document.write("<tr><td>" + character.Name + "</td><td>" + character.USN + "</td><td><br> ");
+     // characterElement.innerText = `Name: ${character.Name}`;
+    //     USN.innerText = `USN: ${character.USN}`;
+    //   charactersDiv.append(characterElement);
+    //     charactersDiv.append(USN);
+        }
+    });
+}
+        
+</script>
+</body>
+<style type="text/css" media = "all" >
+    table,tr,td,th {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid black;
+    }
+    .tab{
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid black;
+    }
+</style>    
+
+</html>
+</html>
