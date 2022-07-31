@@ -10,6 +10,8 @@ fetch('https://script.google.com/macros/s/AKfycbyGrtQOUbZJpfJYws3G40Awek7Kz-OZ7a
                 document.write("<tr style='color:red;font-weight: bold;'><td>" + character.Name + "</td><td>" + character.USN + "</td><td>");
             }
             
+
+            
     //   const characterElement = document.createElement('p');
     //   const USN = document.createElement('p');
     else{
