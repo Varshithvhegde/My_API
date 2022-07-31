@@ -6,7 +6,6 @@
 
 > This is a custom API i created which has details like USN and Name of my Classmates.
 
-### 🏠 [Homepage](https://Varshithvhegde.github.io/My_API/)
 
 ### ✨ [Demo](https://Varshithvhegde.github.io/My_API/)
 
