@@ -15,6 +15,7 @@ const fetchStudents = async () => {
         characters.forEach(student => {
             if(student.Name!="Name"){
                 
+                
             const StudentDiv = document.createElement('div');    
             StudentDiv.classList.add('student');
             if(student.USN=="4MT19CS174"){
