@@ -4,29 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MITE CSE3</title>
-    <script src="script.js" defer></script>
+    <script src="s.js" defer></script>
   </head>
   <body>
     <div id='Details'></div>
-
+    <div id="student_container" class="student-container"></div>
 
 <!--Style is not working on Table element and others which is dynamically created using javascript-->
 <!--Problem is Identified that is in this the css is rendered fast and then javascript is rendered so that the first rendered css will be overwritten 
      I found out by adding background color to body when I added bg color once it apperad then it automatically vanished whhen javascript is rendered.
 
 -->
-<style type="text/css" media = "all" >
+<style>
+* {
+	box-sizing: border-box;
+}
 
-    table,tr,td,th {
-        border-collapse: collapse;
-        width: 100%;
-        border: 1px solid black;
-    }
-    .tab{
-        border-collapse: collapse;
-        width: 100%;
-        border: 1px solid black;
-    }
+body {
+	background: #EFEFBB;
+	background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+	background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Lato';
+	margin: 0;
+}
+
+h1 {
+	letter-spacing: 3px;
+}
+
+.student-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-between;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.student {
+	background-color: #eee;
+	border-radius: 20px;
+	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+}
+
+.student .img-container {
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+}
+
+.student .img-container img {
+	margin-top: 20px;
+	max-width: 90%;
+}
+
+.student .info {
+	margin-top: 20px;
+}
+
+.student .number {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	font-size: 0.8em;
+	padding: 5px 10px;
+}
+
+.student .name {
+	margin: 15px 0 7px;
+	letter-spacing: 1px;
+}
 </style>    
   </body>
 </html>
