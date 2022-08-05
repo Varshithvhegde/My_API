@@ -14,20 +14,33 @@ const fetchStudents = async () => {
 
         characters.forEach(student => {
             if(student.Name!="Name"){
+                
             const StudentDiv = document.createElement('div');    
             StudentDiv.classList.add('student');
+            if(student.USN=="4MT19CS174"){
         const StudentInnerHTML = `
+            <div class="info"  onclick="window.location.href = 'https://github.com/Varshithvhegde';">
+                <span class="number">${student.USN}</span>
+                <h3 class="name" style="color:red;">${student.Name}</h3>
+               
+            </div>
+        `;
+        StudentDiv.innerHTML = StudentDiv.innerHTML + StudentInnerHTML;
+    
+        student_container.appendChild(StudentDiv);      
+        }
+        else{
+            const StudentInnerHTML = `
             <div class="info">
                 <span class="number">${student.USN}</span>
                 <h3 class="name">${student.Name}</h3>
                
             </div>
         `;
-    
-        
         StudentDiv.innerHTML = StudentDiv.innerHTML + StudentInnerHTML;
     
-        student_container.appendChild(StudentDiv);
+        student_container.appendChild(StudentDiv); 
+        }
             }
         });
         
