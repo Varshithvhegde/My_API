@@ -21,7 +21,7 @@ https://script.google.com/macros/s/AKfycbyGrtQOUbZJpfJYws3G40Awek7Kz-OZ7ahLM2Vio
 ## Screenshot
 <img src="https://user-images.githubusercontent.com/80502833/183128173-62fa5687-40d9-4441-8603-30dfb02eee8f.png" width=800px/>  
 
-## Author
+## Author  
 
 👤 **Varshith V Hegde**
 
