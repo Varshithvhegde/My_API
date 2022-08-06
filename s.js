@@ -4,7 +4,7 @@
 
 const fetchStudents = async () => {
 
-   fetch('https://script.google.com/macros/s/AKfycbyGrtQOUbZJpfJYws3G40Awek7Kz-OZ7ahLM2VioTJ5aaoHmvKL8E9X0-0Ng4-QGgPQ/exec')
+   fetch('https://script.google.com/macros/s/AKfycbwov_X3aAX_5c9PgwPjPniLIBIgCzWu0UbT1Lt9LHQRfV7IUpGWPqzQ1yyvzJgFUNJb/exec')
     .then(response => response.json())
     .then(characters => showCharacters(characters.data));
     showCharacters = characters => {
@@ -32,7 +32,7 @@ const fetchStudents = async () => {
         }
         else{
             const StudentInnerHTML = `
-            <div class="info">
+            <div class="info" onclick="window.location.href ='tel:${student.phone}';">
                 <span class="number">${student.USN}</span>
                 <h3 class="name">${student.Name}</h3>
                
