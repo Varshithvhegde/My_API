@@ -17,14 +17,11 @@ const fetchStudents = async () => {
 
    fetch('https://script.google.com/macros/s/AKfycbyGrtQOUbZJpfJYws3G40Awek7Kz-OZ7ahLM2VioTJ5aaoHmvKL8E9X0-0Ng4-QGgPQ/exec')
     .then(response => response.json())
+    
     .then(characters => showCharacters(characters.data));
     
     showCharacters = characters => {
-        
-
-
-
-        characters.forEach(student => {
+            characters.forEach(student => {
             if(student.Name!="Name"){
                 
                 
@@ -56,7 +53,8 @@ const fetchStudents = async () => {
         }
             }
         });
-        
+        hideLoading();
     }
+    
 }
 fetchStudents();
