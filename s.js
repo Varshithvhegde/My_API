@@ -1,12 +1,24 @@
 
 //It uses the fetchStudents function to fetch the data from the google sheet and then displays it on the page.  It also adds a class of student to the div element.
 
-
+const loader = document.querySelector("#loading");
+function displayLoading() {
+    loader.classList.add("display");
+    // to stop loading after some time
+    setTimeout(() => {
+        loader.classList.remove("display");
+    }, 5000);
+}
+function hideLoading() {
+    loader.classList.remove("display");
+}
+displayLoading();
 const fetchStudents = async () => {
 
    fetch('https://script.google.com/macros/s/AKfycbyGrtQOUbZJpfJYws3G40Awek7Kz-OZ7ahLM2VioTJ5aaoHmvKL8E9X0-0Ng4-QGgPQ/exec')
     .then(response => response.json())
     .then(characters => showCharacters(characters.data));
+    
     showCharacters = characters => {
         
 
